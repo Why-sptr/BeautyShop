@@ -1,0 +1,462 @@
+@font-face {
+    font-family: "Juana";
+    src: url("./fonts/Fontspring-DEMO-juana-regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Juana";
+    src: url("./fonts/Fontspring-DEMO-juana-bold.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Juana";
+    src: url("./fonts/Fontspring-DEMO-juana-italic.otf") format("opentype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Font */
+* {
+    font-family: "Poopins", sans-serif;
+}
+
+h1 {
+    font-family: "Juana", sans-serif;
+}
+
+h2 {
+    font-family: "Juana", sans-serif;
+    font-size: 30px !important;
+}
+
+h3 {
+    font-size: 22px !important;
+}
+
+h4 {
+    font-size: 18px !important;
+}
+
+h5 {
+    font-size: 16px !important;
+}
+
+h6 {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+
+/* Text */
+.text-web1 {
+    color: #df72af;
+}
+
+.text-web2 {
+    color: #3a2d36;
+}
+
+.text-web3 {
+    color: #755d6b;
+}
+
+.text-logo {
+    font-family: "Juana", sans-serif;
+    font-size: 16px;
+    color: #3a2d36 !important;
+}
+
+.text-logo-footer {
+    font-family: "Juana", sans-serif;
+    font-size: 16px;
+    color: white !important;
+}
+
+/* Button */
+.btn-web1 {
+    background-color: #3a2d36;
+    padding: 10px 20px;
+    color: white;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn-web2 {
+    background-color: #3a2d36;
+    padding: 10px 20px;
+    color: white;
+    font-family: "Poppins", serif;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    border-radius: 30px;
+    border: none;
+}
+.btn-web5 {
+    background-color: #DF72AF;
+    padding: 10px 20px;
+    color: white;
+    font-family: "Poppins", serif;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    border-radius: 30px;
+    border: none;
+}
+
+.btn-web3, .btn-web4 {
+    background-color: #3a2d36;
+    color: white;
+    font-family: "Poppins", serif;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    border: none;
+    padding: 10px 20px;
+}
+
+.btn-web3 {
+    border-radius: 10px 0px 0px 10px; /* Sudut kiri membulat */
+}
+
+.btn-web4 {
+    border-radius: 0px 10px 10px 0px; /* Sudut kanan membulat */
+}
+
+
+.btn-web1:hover,
+.btn-web2:hover,
+.btn-web3:hover,
+.btn-web4:hover {
+    background-color: #c06198;
+}
+
+/* Background */
+.bg-web1 {
+    background-color: #3a2d36;
+}
+
+.alert-success {
+    background-color: rgba(223, 114, 175, 0.2) !important;
+}
+
+/* Shadow */
+.shadow-web {
+    box-shadow: 0px 0px 10px 0px rgba(58, 45, 54, 0.1);
+}
+
+/* Navbar */
+.navbar-nav .nav-item .nav-link {
+    padding: 0 10px !important;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    font-size: 14px !important;
+    color: #717d96 !important;
+    border-bottom: 3px solid transparent;
+    border-radius: 3px;
+}
+
+.navbar-nav .nav-link.active {
+    color: #df72af !important;
+    border-bottom-color: #df72af;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #df72af !important;
+    border-bottom-color: #df72af;
+}
+
+.navbar-nav .fa-shopping-cart {
+    font-size: 1.2rem;
+    vertical-align: middle;
+    color: #df72af;
+}
+
+/* Hero */
+.hero-home {
+    background-image: url("./image/Background\ Hero.png");
+    background-size: cover;
+    border-radius: 20px;
+    min-height: 50vh;
+}
+
+.hero-shop {
+    background-image: url("./image/Background\ Hero\ 2.png");
+    background-size: cover;
+    border-radius: 20px;
+    min-height: 35vh;
+}
+
+.hero-blog {
+    background: linear-gradient(90deg, #FFADD9, #FFE9F5, #FFADD9);
+    border-radius: 20px;
+    min-height: 35vh;
+
+}
+
+/* Card */
+.card-product {
+    border-radius: 20px !important;
+}
+
+.card-product .rating i {
+    font-size: 16px;
+    color: #ffa629;
+}
+
+.cta img {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cta {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sticky-sidebar {
+    position: sticky;
+    top: 20px;
+    height: calc(100vh - 40px);
+    overflow-y: auto;
+    padding-bottom: 20px;
+}
+
+.custom-checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.custom-checkbox:checked {
+    background-color: #3a2d36 !important;
+    border-color: #3a2d36 !important;
+}
+
+.custom-checkbox:checked::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: #fff;
+    /* Warna checklist */
+    font-weight: bold;
+}
+
+.custom-range {
+    width: 100%;
+    appearance: none;
+    background-color: #e5e5e5;
+    height: 4px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.custom-range::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #3a2d36 !important;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.custom-range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: #3a2d36;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-label {
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3a2d36;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.slider-label::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #3a2d36;
+    clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+}
+
+.scrollable-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    cursor: grab;
+}
+
+.draggable-container {
+    display: inline-flex;
+    gap: 8px;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.draggable-container:active {
+    cursor: grabbing;
+}
+
+.form-label {
+    color: #3a2d36;
+}
+
+/* Pagination */
+.pagination-web .pagination .page-link {
+    color: #3a2d36;
+    border: 1px solid #3a2d36;
+    transition: all 0.3s ease;
+}
+
+.pagination-web .pagination .page-link:hover {
+    color: white;
+    border-color: #3a2d36;
+    background-color: #3a2d36;
+}
+
+.pagination-web .pagination .page-link.active {
+    color: #fff;
+    background-color: #3a2d36;
+    border-color: #3a2d36;
+}
+
+
+/* Input */
+.form-control,
+.form-select {
+    border-radius: 10px !important;
+    padding: 10px 15px !important;
+    font-size: 14px;
+    box-shadow: none;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 10px 0px rgba(58, 45, 54, 0.1);
+}
+
+.form-control:focus,
+.form-select:focus {
+    box-shadow: 0 0 0 2px rgba(223, 114, 175, 0.2) !important;
+}
+
+textarea.form-control {
+    resize: none;
+    border-radius: 10px;
+}
+
+.search-bar {
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+
+.search-bar .form-control {
+    border: none;
+    box-shadow: none !important;
+    flex: 1;
+    padding: 10px;
+}
+
+.search-bar .btn {
+    background: none;
+    border: none;
+    outline: none;
+    color: #666; 
+    cursor: pointer;
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+.search-bar .btn:hover {
+    color: #000;
+}
+
+.form-control-item {
+    /* height: 40px;  */
+    max-width: 70px; /* Lebar sesuai kebutuhan */
+    border: 1px solid #3a2d36; /* Border agar serasi */
+    text-align: center;
+    margin: 0; /* Hilangkan margin */
+    padding: 0; /* Hilangkan padding */
+    box-shadow: none; /* Hilangkan shadow default */
+    border-radius: 0; /* Tidak membulat */
+}
+.form-control-item2 {
+    border: 1px solid #3a2d36; /* Border agar serasi */
+    border-radius: 10px !important;
+    text-align: center;
+    box-shadow: none; /* Hilangkan shadow default */
+}
+.form-control-item3 {
+    border-radius: 10px 0px 0px 10px !important;
+    padding: 10px 15px !important;
+}
+
+
+/* Accordion */
+.accordion-button {
+    border-radius: 10px !important;
+    font-family: "Poppins", serif;
+    transition: all 0.3s ease;
+}
+.accordion-item ,
+.accordion-button:focus,
+.accordion-button:active {
+    
+    box-shadow: none !important;
+    background-color:white !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #3a2d36 !important;
+    background-color:white !important;
+}
+
+.accordion-body {
+    padding: 15px;
+    color: #755d6b !important;
+    line-height: 1.6;
+}
+
+.accordion-item + .accordion-item {
+    margin-top: 15px;
+}
+
+/* Atur untuk Desktop */
+@media (min-width: 992px) {
+    .draggable-container {
+        justify-content: center;
+    }
+
+    .scrollable-container {
+        overflow-x: hidden;
+        cursor: default;
+    }
+    
+}
