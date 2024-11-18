@@ -110,30 +110,10 @@ h6 {
     border: none;
 }
 
-.btn-web3, .btn-web4 {
-    background-color: #3a2d36;
-    color: white;
-    font-family: "Poppins", serif;
-    font-size: 14px;
-    font-weight: 600;
-    font-style: normal;
-    border: none;
-    padding: 10px 20px;
-}
-
-.btn-web3 {
-    border-radius: 10px 0px 0px 10px; /* Sudut kiri membulat */
-}
-
-.btn-web4 {
-    border-radius: 0px 10px 10px 0px; /* Sudut kanan membulat */
-}
 
 
 .btn-web1:hover,
-.btn-web2:hover,
-.btn-web3:hover,
-.btn-web4:hover {
+.btn-web2:hover{
     background-color: #c06198;
 }
 
@@ -399,13 +379,13 @@ textarea.form-control {
 
 .form-control-item {
     /* height: 40px;  */
-    max-width: 70px; /* Lebar sesuai kebutuhan */
+    max-width: 100px; /* Lebar sesuai kebutuhan */
     border: 1px solid #3a2d36; /* Border agar serasi */
     text-align: center;
     margin: 0; /* Hilangkan margin */
     padding: 0; /* Hilangkan padding */
     box-shadow: none; /* Hilangkan shadow default */
-    border-radius: 0; /* Tidak membulat */
+    padding: 10px 15px !important;
 }
 .form-control-item2 {
     border: 1px solid #3a2d36; /* Border agar serasi */
@@ -413,9 +393,17 @@ textarea.form-control {
     text-align: center;
     box-shadow: none; /* Hilangkan shadow default */
 }
-.form-control-item3 {
+
+
+.form-control-item3,
+.form-control-item3-select{
     border-radius: 10px 0px 0px 10px !important;
     padding: 10px 15px !important;
+    font-size: 14px;
+    box-shadow: none;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 10px 0px rgba(58, 45, 54, 0.1);
 }
 
 
