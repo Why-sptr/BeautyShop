@@ -54,8 +54,13 @@
                             <a class="nav-link text-dark fw-bold" href="/faq-page.html">Faq</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-pink fs-5" href="/cart-page.html">
+                            <a class="nav-link text-pink fs-5 position-relative" href="/cart-page.html">
                                 <i class="fas fa-shopping-cart"></i>
+                                <span id="cart-badge"
+                                    class="badge bg-web1 rounded-circle position-absolute top-0 start-70 translate-middle p-2 border border-light"
+                                    style="display: none;">
+                                    0
+                                </span>
                             </a>
                         </li>
                     </ul>
@@ -84,22 +89,22 @@
                         <label for="firstName" class="form-label">Nama Depan</label>
                         <input type="text" class="form-control border-0" id="firstName" placeholder="Nama Depan">
                     </div>
-        
+
                     <div class="col-md-6">
                         <label for="lastName" class="form-label">Nama Belakang</label>
                         <input type="text" class="form-control border-0" id="lastName" placeholder="Nama Belakang">
                     </div>
-        
+
                     <div class="col-md-6">
                         <label for="email" class="form-label">Email</label>
                         <input type="email" class="form-control border-0" id="email" placeholder="Email">
                     </div>
-        
+
                     <div class="col-md-6">
                         <label for="phone" class="form-label">Telepon</label>
                         <input type="tel" class="form-control border-0" id="phone" placeholder="Telepon">
                     </div>
-        
+
                     <div class="col-md-6">
                         <label for="product" class="form-label">Produk</label>
                         <select class="form-select border-0" id="product">
@@ -109,7 +114,7 @@
                             <option value="3">Produk 3</option>
                         </select>
                     </div>
-        
+
                     <div class="col-md-6">
                         <label for="subject" class="form-label">Subjek</label>
                         <select class="form-select border-0" id="subject">
@@ -119,12 +124,12 @@
                             <option value="3">Subjek 3</option>
                         </select>
                     </div>
-        
+
                     <div class="col-12">
                         <label for="message" class="form-label">Pesan</label>
                         <textarea class="form-control border-0" id="message" rows="10" placeholder="Pesan"></textarea>
                     </div>
-        
+
                     <div class="col-12 text-center">
                         <button id="submitButton" class="btn-web1 w-50">Kirim Pesan</button>
                     </div>
@@ -163,25 +168,9 @@
     </footer>
 </body>
 <script>
-   // Pilih tombol dan alert
-const submitButton = document.getElementById("submitButton");
-const successAlert = document.getElementById("successAlert");
-
-// Tambahkan event listener ke tombol
-submitButton.addEventListener("click", (event) => {
-    // Cegah refresh halaman
-    event.preventDefault();
-
-    // Tampilkan alert
-    successAlert.classList.remove("d-none");
-
-    // Sembunyikan alert setelah 3 detik
-    setTimeout(() => {
-        successAlert.classList.add("d-none");
-    }, 3000);
-});
+    
 
 </script>
-
+<script src="script.js"></script>
 
 </html>

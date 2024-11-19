@@ -122,6 +122,10 @@ h6 {
     background-color: #3a2d36;
 }
 
+.border-web1{
+    border: solid 1px #3A2D36 !important;
+}
+
 .alert-success {
     background-color: rgba(223, 114, 175, 0.2) !important;
 }
@@ -182,9 +186,15 @@ h6 {
 /* Card */
 .card-product {
     border-radius: 20px !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-product:hover {
+    transform: translateY(-5px); /* Slightly lift the card */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
 }
 
-.card-product .rating i {
+
+.rating i {
     font-size: 16px;
     color: #ffa629;
 }
@@ -435,6 +445,22 @@ textarea.form-control {
 .accordion-item + .accordion-item {
     margin-top: 15px;
 }
+
+.tab-product.active {
+    background-color: #3A2D36 !important; /* Change the background color of the active tab */
+    color: white !important; /* Ensure the text is white on the active tab */
+}
+
+.tab-product {
+    transition: background-color 0.3s ease; /* Smooth transition effect when changing tab */
+    color: #3A2D36 !important;
+}
+
+.tab-product:hover {
+    background-color: #3A2D36 !important; /* Optional: darken the background color on hover */
+    color: white !important;
+}
+
 
 /* Atur untuk Desktop */
 @media (min-width: 992px) {
