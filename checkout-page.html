@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="p-3">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container p-0">
+                <a class="navbar-brand d-flex align-items-center" href="/index.html">
+                    <img src="Image/Logo Head.png" alt="Logo" width="40" class="me-2" />
+                    <span class="fw-bold text-logo">Beauty Shop</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-web1 fw-bold" href="/index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-bold" href="/shop-page.html">Belanja</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-bold" href="/about-page.html">Tentang Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-bold" href="/contact-us-page.html">Kontak</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-bold" href="/blog-page.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-bold" href="/faq-page.html">Faq</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-pink fs-5 position-relative" href="/cart-page.html">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span id="cart-badge"
+                                    class="badge bg-web1 rounded-circle position-absolute top-0 start-70 translate-middle p-2 border border-light"
+                                    style="display: none;">
+                                    0
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container mb-5">
+            <h2 class="text-web2 text-center fw-bold mb-4">Checkout</h2>
+            <div class="row gap-5">
+                <!-- Kolom Kiri -->
+                <div class="col-md-6">
+                    <div class="d-flex gap-4 mb-4">
+                        <div class="col">
+                            <label
+                                class="d-flex align-items-center justify-content-between w-100 p-3 rounded-2 shadow-web border-0 text-web2">
+                                Kirim
+                                <input type="radio" class="form-check-input ms-2" name="delivery" value="kirim">
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label
+                                class="d-flex align-items-center justify-content-between w-100 p-3 rounded-2 shadow-web border-0 text-web2">
+                                Ambil Ditempat
+                                <input type="radio" class="form-check-input ms-2" name="delivery" value="ambil">
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="firstName" class="form-label fw-semibold text-web2">Nama Lengkap</label>
+                        <input type="text" class="form-control border-0" id="firstName" placeholder="Nama Depan">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label fw-semibold text-web2">Email</label>
+                        <input type="text" class="form-control border-0" id="email" placeholder="contoh@gmail.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="address" class="form-label fw-semibold text-web2">Alamat</label>
+                        <input type="text" class="form-control border-0" id="address" placeholder="Alamat">
+                    </div>
+                    <div class="mb-3">
+                        <label for="satate" class="form-label fw-semibold text-web2">Provinsi</label>
+                        <select class="form-select border-0" id="satate">
+                            <option selected>Pilih Provinsi</option>
+                            <option value="1">Produk 1</option>
+                            <option value="2">Produk 2</option>
+                            <option value="3">Produk 3</option>
+                        </select>
+                    </div>
+
+                    <div class="row gap-1">
+                        <div class="col mb-3">
+                            <label for="location" class="form-label fw-semibold text-web2">Kota</label>
+                            <select class="form-select border-0" id="city">
+                                <option selected>Pilih Kota</option>
+                                <option value="1">Kota 1</option>
+                                <option value="2">Kota 2</option>
+                                <option value="3">Kota 3</option>
+                            </select>
+                        </div>
+                        <div class="col mb-3">
+                            <label for="location" class="form-label fw-semibold text-web2">Kecamatan</label>
+                            <select class="form-select border-0" id="subdistrict">
+                                <option selected>Pilih Kecamatan</option>
+                                <option value="1">Kecamatan 1</option>
+                                <option value="2">Kecamatan 2</option>
+                                <option value="3">Kecamatan 3</option>
+                            </select>
+                        </div>
+                        <div class="col mb-3">
+                            <label for="location" class="form-label fw-semibold text-web2">Kelurahan</label>
+                            <select class="form-select border-0" id="ward">
+                                <option selected>Pilih Kelurahan</option>
+                                <option value="1">Kelurahan 1</option>
+                                <option value="2">Kelurahan 2</option>
+                                <option value="3">Kelurahan 3</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Lorem Ipsum has been the industry's standard
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Kolom Kanan -->
+                <div class="col-md-5 shadow-web p-4">
+                    <div class="mb-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="me-3">
+                                <img src="image/Product 1.png"
+                                    style="max-width: 150px; max-height: 150px; object-fit: cover;" class="rounded"
+                                    alt="Produk 1">
+                            </div>
+                            <div>
+                                <h4 class="fw-semibold mb-1">Sunscreen</h4>
+                                <p class="text-web3 mb-0">1 x 100 ML</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="me-3">
+                                <img src="image/Product 2.png"
+                                    style="max-width: 150px; max-height: 150px; object-fit: cover;" class="rounded"
+                                    alt="Produk 2">
+                            </div>
+                            <div>
+                                <h4 class="fw-semibold mb-1">Sunscreen</h4>
+                                <p class="text-web3 mb-0">1 x 100 ML</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-group mb-4">
+                        <input type="text" class="form-control form-control-item3 border-0" placeholder="Ketik Voucher"
+                            aria-label="Voucher" aria-describedby="button-addon2">
+                        <button class="btn-web1" type="button" id="button-addon2">Pasang Voucher</button>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="text-web3">Subtotal</span>
+                            <span class="text-web3">Rp 300.000</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="text-web3">Pengiriman</span>
+                            <span class="text-web3">Rp 25.000</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="text-web3">Diskon</span>
+                            <span class="text-web3">-Rp 25.000</span>
+                        </div>
+                        <div class="d-flex justify-content-between fw-semibold fs-5">
+                            <span class="text-web3">Total</span>
+                            <span class="text-web3">Rp 300.000</span>
+                        </div>
+                    </div>
+
+                    <!-- Tombol Beli Sekarang -->
+                    <div>
+                        <button class="btn-web1 w-100 py-2" data-bs-toggle="modal"
+                            data-bs-target="#confirmationModal">Beli Sekarang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Konfirmasi Pembelian -->
+        <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header text-center position-relative">
+                        <div class="rounded-circle bg-web1 p-3 text-white position-absolute"
+                            style="max-width: 100px; max-height: 100px; top: -30px; left: 50%; transform: translateX(-50%); border: 3px solid white; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-check" style="font-size: 30px;"></i>
+                        </div>
+                    </div>
+                    <div class="modal-body text-center">
+                        <h4 class="text-web2 fw-semibold">Pembayaran Berhasil</h4>
+                        <p>Pembayaran kamu sudah masuk<br>Tunggu barang datang depan rumah</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-web1 w-100" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-web1 text-light p-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 d-flex flex-column">
+                    <a href="#" class="d-flex align-items-center mb-3 text-light text-decoration-none">
+                        <img src="Image/Logo Head.png" alt="Logo" max-width="40" class="me-2">
+                        <span class="fw-bold text-logo-footer">Beauty Shop</span>
+                    </a>
+                    <p class="mb-0">Copyright 2024 Beauty Shop.</p>
+                </div>
+                <div class="col-md-6 align-self-end">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link px-2 text-light" data-bs-toggle="modal"
+                                data-bs-target="#privacyModal">Privacy Policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link px-2 text-light" data-bs-toggle="modal"
+                                data-bs-target="#termsModal">Terms & Conditions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link px-2 text-light" data-bs-toggle="modal"
+                                data-bs-target="#cookieModal">Cookie Policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link px-2 text-light" data-bs-toggle="modal"
+                                data-bs-target="#contactModal">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+    <!-- Privacy Policy Modal -->
+    <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="privacyModalLabel">Privacy Policy</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    This is the Privacy Policy content. You can replace this with your actual privacy policy text.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms & Conditions Modal -->
+    <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="termsModalLabel">Terms & Conditions</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    This is the Terms & Conditions content. You can replace this with your actual terms and conditions
+                    text.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie Policy Modal -->
+    <div class="modal fade" id="cookieModal" tabindex="-1" aria-labelledby="cookieModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cookieModalLabel">Cookie Policy</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    This is the Cookie Policy content. You can replace this with your actual cookie policy text.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Feel free to contact us via the following methods:</p>
+                    <ul>
+                        <li>Email: contact@beautyshop.com</li>
+                        <li>Phone: +123 456 789</li>
+                        <li>Address: UPGRIS Raya</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<script>
+    
+</script>
+
+</html>
