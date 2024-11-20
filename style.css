@@ -110,8 +110,6 @@ h6 {
     border: none;
 }
 
-
-
 .btn-web1:hover,
 .btn-web2:hover{
     background-color: #c06198;
@@ -189,8 +187,8 @@ h6 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .card-product:hover {
-    transform: translateY(-5px); /* Slightly lift the card */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -338,7 +336,6 @@ h6 {
     border-color: #3a2d36;
 }
 
-
 /* Input */
 .form-control,
 .form-select {
@@ -389,21 +386,20 @@ textarea.form-control {
 
 .form-control-item {
     /* height: 40px;  */
-    max-width: 100px; /* Lebar sesuai kebutuhan */
-    border: 1px solid #3a2d36; /* Border agar serasi */
+    max-width: 100px;
+    border: 1px solid #3a2d36;
     text-align: center;
-    margin: 0; /* Hilangkan margin */
-    padding: 0; /* Hilangkan padding */
-    box-shadow: none; /* Hilangkan shadow default */
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
     padding: 10px 15px !important;
 }
 .form-control-item2 {
-    border: 1px solid #3a2d36; /* Border agar serasi */
+    border: 1px solid #3a2d36;
     border-radius: 10px !important;
     text-align: center;
-    box-shadow: none; /* Hilangkan shadow default */
+    box-shadow: none;
 }
-
 
 .form-control-item3,
 .form-control-item3-select{
@@ -415,7 +411,6 @@ textarea.form-control {
     transition: all 0.3s ease;
     box-shadow: 0px 0px 10px 0px rgba(58, 45, 54, 0.1);
 }
-
 
 /* Accordion */
 .accordion-button {
@@ -446,23 +441,23 @@ textarea.form-control {
     margin-top: 15px;
 }
 
+/* Tab */
 .tab-product.active {
-    background-color: #3A2D36 !important; /* Change the background color of the active tab */
-    color: white !important; /* Ensure the text is white on the active tab */
+    background-color: #3A2D36 !important;
+    color: white !important;
 }
 
 .tab-product {
-    transition: background-color 0.3s ease; /* Smooth transition effect when changing tab */
+    transition: background-color 0.3s ease;
     color: #3A2D36 !important;
 }
 
 .tab-product:hover {
-    background-color: #3A2D36 !important; /* Optional: darken the background color on hover */
+    background-color: #3A2D36 !important;
     color: white !important;
 }
 
-
-/* Atur untuk Desktop */
+/* Mobile */
 @media (min-width: 992px) {
     .draggable-container {
         justify-content: center;
