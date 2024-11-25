@@ -73,13 +73,14 @@
             <h2 class="text-web2 text-center fw-bold mb-4">Keranjang</h2>
 
             <!-- Table Header -->
-            <div class="row fw-bold border-bottom pb-2">
+            <div class="row fw-bold border-bottom pb-2 d-none d-md-flex">
                 <div class="col-md-4">Description</div>
                 <div class="col-md-2 text-center">Variant</div>
                 <div class="col-md-3 text-center">Quantity</div>
                 <div class="col-md-2 text-center">Price</div>
                 <div class="col-md-1"></div>
             </div>
+            
 
             <!-- Items -->
             <div id="product-list" class="row">
@@ -97,35 +98,35 @@
             <!-- Cart Summary (hidden when cart is empty) -->
             <div id="cart-summary" style="display: block;">
                 <div class="row mt-4">
-                    <div class="col-md-3">
+                    <div class="col-12 col-md-3 mb-3 mb-md-0">
                         <div class="d-flex justify-content-between p-2 form-control-item2">
                             <p class="p-0 m-0">Diskon</p>
                             <p class="fw-bold p-0 m-0">-Rp 25.000</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-12 col-md-3 mb-3 mb-md-0">
                         <div class="d-flex justify-content-between p-2 form-control-item2">
                             <p class="p-0 m-0">Pengiriman</p>
                             <p class="fw-bold p-0 m-0">Rp 25.000</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-12 col-md-3 mb-3 mb-md-0">
                         <div class="d-flex justify-content-between p-2 form-control-item2">
                             <p class="p-0 m-0">Subtotal</p>
                             <p class="fw-bold p-0 m-0">Rp 300.000</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-12 col-md-3">
                         <div class="d-flex justify-content-between p-2 form-control-item2">
                             <p class="p-0 m-0">Total</p>
                             <p class="fw-bold p-0 m-0">Rp 300.000</p>
                         </div>
                     </div>
-                </div>
+                </div>                
                 <p class="text-web3 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <div class="row mt-3 align-items-center">
-                    <div class="col-md-8 d-flex g-0">
-                        <div class="input-group w-100">
+                    <div class="col-md-8 d-flex g-0 p-2">
+                        <div class="input-group voucher w-100">
                             <input type="text" class="form-control form-control-item3 border-0"
                                 placeholder="Ketik Voucher" aria-label="Voucher" aria-describedby="button-addon2">
                             <button class="btn-web1" type="button" id="button-addon2">Pasang Voucher</button>

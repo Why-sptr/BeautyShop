@@ -98,6 +98,7 @@ h6 {
     border-radius: 30px;
     border: none;
 }
+
 .btn-web5 {
     background-color: #DF72AF;
     padding: 10px 20px;
@@ -111,7 +112,7 @@ h6 {
 }
 
 .btn-web1:hover,
-.btn-web2:hover{
+.btn-web2:hover {
     background-color: #c06198;
 }
 
@@ -120,7 +121,7 @@ h6 {
     background-color: #3a2d36;
 }
 
-.border-web1{
+.border-web1 {
     border: solid 1px #3A2D36 !important;
 }
 
@@ -186,6 +187,7 @@ h6 {
     border-radius: 20px !important;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .card-product:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -374,7 +376,7 @@ textarea.form-control {
     background: none;
     border: none;
     outline: none;
-    color: #666; 
+    color: #666;
     cursor: pointer;
     font-size: 18px;
     padding: 0 10px;
@@ -394,6 +396,7 @@ textarea.form-control {
     box-shadow: none;
     padding: 10px 15px !important;
 }
+
 .form-control-item2 {
     border: 1px solid #3a2d36;
     border-radius: 10px !important;
@@ -402,7 +405,7 @@ textarea.form-control {
 }
 
 .form-control-item3,
-.form-control-item3-select{
+.form-control-item3-select {
     border-radius: 10px 0px 0px 10px !important;
     padding: 10px 15px !important;
     font-size: 14px;
@@ -418,17 +421,18 @@ textarea.form-control {
     font-family: "Poppins", serif;
     transition: all 0.3s ease;
 }
-.accordion-item ,
+
+.accordion-item,
 .accordion-button:focus,
 .accordion-button:active {
-    
+
     box-shadow: none !important;
-    background-color:white !important;
+    background-color: white !important;
 }
 
 .accordion-button:not(.collapsed) {
     color: #3a2d36 !important;
-    background-color:white !important;
+    background-color: white !important;
 }
 
 .accordion-body {
@@ -437,7 +441,7 @@ textarea.form-control {
     line-height: 1.6;
 }
 
-.accordion-item + .accordion-item {
+.accordion-item+.accordion-item {
     margin-top: 15px;
 }
 
@@ -457,6 +461,23 @@ textarea.form-control {
     color: white !important;
 }
 
+
+.desktop {
+    display: none !important;
+}
+
+.mobile {
+    display: flex !important;
+}
+
+#desktop-quantity {
+    display: none !important;
+}
+
+#mobile-quantity {
+    display: flex !important;
+}
+
 /* Mobile */
 @media (min-width: 992px) {
     .draggable-container {
@@ -467,5 +488,25 @@ textarea.form-control {
         overflow-x: hidden;
         cursor: default;
     }
-    
+
+    .voucher {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    .desktop {
+        display: flex !important;
+    }
+
+    .mobile {
+        display: none !important;
+    }
+
+    #desktop-quantity {
+        display: flex !important;
+    }
+
+    #mobile-quantity {
+        display: none !important;
+    }
 }

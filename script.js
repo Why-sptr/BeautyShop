@@ -182,29 +182,38 @@ function renderProductList() {
         productRow.id = `product-${product.id}`;
 
         productRow.innerHTML = `
-      <div class="col-md-4 d-flex align-items-center">
-        <img src="${product.image}" class="rounded" style="max-width: 150px; max-height: 150px; object-fit: cover;" alt="Product Image" id="product-img-${product.id}">
-        <div class="ms-3">
-          <h5 class="mb-0" id="product-name-${product.id}">${product.name}</h5>
-          <small class="text-muted">${product.variant}</small>
+        <div class="col-md-4 d-flex align-items-center">
+            <img src="${product.image}" class="rounded" style="max-width: 150px; max-height: 150px; object-fit: cover;" alt="Product Image" id="product-img-${product.id}">
+            <div class="ms-3">
+            <h5 class="mb-0" id="product-name-${product.id}">${product.name}</h5>
+            <small class="text-muted">${product.variant}</small>
+            <div class="input-group justify-content-center mobile">
+                <button class="btn btn-primary btn-minus" type="button" style="background-color: #3A2D36; border-color: #3A2D36" data-item="${product.id}">-</button>
+                    <input type="text" class="form-control-item" placeholder="Quantity" aria-label="Quantity" value="1" id="quantity-input-${product.id}">
+                <button class="btn btn-primary btn-plus" type="button" style="background-color: #3A2D36; border-color: #3A2D36" data-item="${product.id}">+</button>
+            </div>
+            </div>
         </div>
-      </div>
-      <div class="col-md-2 text-center">
-        <input type="text" class="form-control-item text-center" value="${product.variant}" readonly>
-      </div>
-      <div class="col-md-3 text-center d-flex align-items-center justify-content-center">
-        <div class="input-group justify-content-center">
-          <button class="btn-web1 btn-minus" type="button" data-item="${product.id}">-</button>
-          <input type="text" class="form-control-item" placeholder="Quantity" aria-label="Quantity" value="1" id="quantity-input-${product.id}">
-          <button class="btn-web1 btn-plus" type="button" data-item="${product.id}">+</button>
+        <div class="col-md-2 text-center desktop">
+            <input type="text" class="form-control-item text-center" value="${product.variant}" readonly>
         </div>
-      </div>
-      <div class="col-md-2 text-center">
-        <h5 class="mb-0 text-web2 fw-semibold">Rp ${product.price.toLocaleString()}</h5>
-      </div>
-      <div class="col-md-1 text-center">
-        <button class="btn-web5 btn-hapus" data-product-id="${product.id}">Hapus</button>
-      </div>
+        <div id="desktop-quantity" class="col-md-3 text-center d-flex align-items-center justify-content-center desktop">
+    <div class="input-group justify-content-center">
+        <button class="btn-web1 btn-minus" type="button" data-item="${product.id}">-</button>
+        <input type="text" class="form-control-item" placeholder="Quantity" aria-label="Quantity" value="1" id="quantity-input-${product.id}">
+        <button class="btn-web1 btn-plus" type="button" data-item="${product.id}">+</button>
+    </div>
+    </div>
+        <div class="col-md-2 text-center desktop">
+            <h5 class="mb-0 text-web2 fw-semibold">Rp ${product.price.toLocaleString()}</h5>
+        </div>
+        <div class="col-md-1 text-center desktop">
+            <button class="btn-web5 btn-hapus" data-product-id="${product.id}">Hapus</button>
+        </div>
+        <div id="mobile-quantity" class="d-flex align-items-center justify-content-between mobile">
+    <h5 class="mb-0 text-web2 fw-semibold">Rp ${product.price.toLocaleString()}</h5>
+    <button class="btn-web5 btn-hapus" data-product-id="${product.id}">Hapus</button>
+    </div>
     `;
 
         productList.appendChild(productRow);
