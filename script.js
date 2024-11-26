@@ -64,11 +64,13 @@ function updateCartBadge() {
     if (cartBadge) {
         if (cartItemCount > 0) {
             cartBadge.textContent = cartItemCount;
-            cartBadge.style.display = 'inline-block';
-            cartBadge.style.display = 'none';
+            cartBadge.style.display = 'inline-block'; // Menampilkan badge
+        } else {
+            cartBadge.style.display = 'none'; // Menyembunyikan badge jika tidak ada item
         }
     }
 }
+
 
 function showToast(productName, productImage) {
     const toastLiveExample = document.getElementById("liveToast");
@@ -290,3 +292,8 @@ submitButton.addEventListener("click", (event) => {
 document.querySelector('#confirmationModal .btn-success').addEventListener('click', function () {
     window.location.href = 'checkout-page.html';
 });
+
+// Change Mian Image Product
+function changeImage(imageSrc) {
+    document.getElementById('mainImage').src = imageSrc;
+}
