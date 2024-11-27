@@ -244,6 +244,10 @@ function goToShopPage() {
 function goToCheckoutPage() {
     window.location.href = "checkout-page.html";
 }
+// Blog Page
+function goToDetailBlogPage() {
+    window.location.href = "detail-blog-page.html";
+}
 
 // Increase Decrease
 function handleQuantityChange(event) {
