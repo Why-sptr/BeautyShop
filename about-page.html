@@ -196,22 +196,91 @@
                 <div class="col-md-6 align-self-end">
                     <ul class="nav justify-content-end">
                         <li class="nav-item">
-                            <a href="#" class="nav-link px-2 text-light">Privacy Policy</a>
+                            <a href="#" class="nav-link px-2 text-light" data-bs-toggle="modal"
+                                data-bs-target="#privacyModal">Privacy Policy</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link px-2 text-light">Terms & Conditions</a>
+                            <a href="#" class="nav-link px-2 text-light" data-bs-toggle="modal"
+                                data-bs-target="#termsModal">Terms & Conditions</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link px-2 text-light">Cookie Policy</a>
+                            <a href="#" class="nav-link px-2 text-light" data-bs-toggle="modal"
+                                data-bs-target="#cookieModal">Cookie Policy</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link px-2 text-light">Contact</a>
+                            <a href="#" class="nav-link px-2 text-light" data-bs-toggle="modal"
+                                data-bs-target="#contactModal">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
+    <!-- Privacy Policy Modal -->
+    <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="privacyModalLabel">Privacy Policy</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    This is the Privacy Policy content. You can replace this with your actual privacy policy text.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms & Conditions Modal -->
+    <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="termsModalLabel">Terms & Conditions</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    This is the Terms & Conditions content. You can replace this with your actual terms and conditions
+                    text.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie Policy Modal -->
+    <div class="modal fade" id="cookieModal" tabindex="-1" aria-labelledby="cookieModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cookieModalLabel">Cookie Policy</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    This is the Cookie Policy content. You can replace this with your actual cookie policy text.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Feel free to contact us via the following methods:</p>
+                    <ul>
+                        <li>Email: contact@beautyshop.com</li>
+                        <li>Phone: +123 456 789</li>
+                        <li>Address: UPGRIS Raya</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
