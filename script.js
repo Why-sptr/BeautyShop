@@ -114,24 +114,24 @@ document.addEventListener("DOMContentLoaded", function () {
 const products = [
     {
         id: 1,
-        name: "Sunscreen",
+        name: "Niacinamide Brightening Moisturizer Gel",
         image: "image/Product 1.png",
         price: 100000,
-        variant: "100 ML",
+        variant: "30 G",
     },
     {
         id: 2,
-        name: "Moisturizer",
+        name: "SKINTIFIC - Zero Oil Cleansing Balm",
         image: "image/Product 2.png",
         price: 150000,
-        variant: "150 ML",
+        variant: "100 ML",
     },
     {
         id: 3,
-        name: "Shampoo",
+        name: "SKINTIFIC - Niacinamide Brightening Serum",
         image: "image/Product 3.png",
         price: 200000,
-        variant: "250 ML",
+        variant: "50 ML",
     },
 ];
 

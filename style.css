@@ -121,6 +121,10 @@ h6 {
     background-color: #3a2d36;
 }
 
+.bg-web2 {
+    background-color: #c06198;
+}
+
 .border-web1 {
     border: solid 1px #3A2D36 !important;
 }
