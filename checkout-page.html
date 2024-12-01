@@ -79,14 +79,14 @@
                             <label
                                 class="d-flex align-items-center justify-content-between w-100 p-3 rounded-2 shadow-web border-0 text-web2">
                                 Kirim
-                                <input type="radio" class="form-check-input ms-2" name="delivery" value="kirim">
+                                <input type="radio" class="form-check-input ms-2" id="kirim" name="delivery" value="kirim">
                             </label>
                         </div>
                         <div class="col">
                             <label
                                 class="d-flex align-items-center justify-content-between w-100 p-3 rounded-2 shadow-web border-0 text-web2">
                                 Ambil Ditempat
-                                <input type="radio" class="form-check-input ms-2" name="delivery" value="ambil">
+                                <input type="radio" class="form-check-input ms-2" id="ambil" name="delivery" value="ambil">
                             </label>
                         </div>
                     </div>
@@ -107,46 +107,69 @@
                         <label for="satate" class="form-label fw-semibold text-web2">Provinsi</label>
                         <select class="form-select border-0" id="satate">
                             <option selected>Pilih Provinsi</option>
-                            <option value="1">Produk 1</option>
-                            <option value="2">Produk 2</option>
-                            <option value="3">Produk 3</option>
+                            <option value="5">DI Yogyakarta</option>
+                            <option value="6">DKI Jakarta</option>
+                            <option value="8">Jawa Barat</option>
+                            <option value="9">Jawa Tengah</option>
+                            <option value="10">Jawa Timur</option>
                         </select>
-                    </div>
+                    </div>                    
 
                     <div class="row gap-1">
                         <div class="col mb-3">
                             <label for="location" class="form-label fw-semibold text-web2">Kota</label>
                             <select class="form-select border-0" id="city">
                                 <option selected>Pilih Kota</option>
-                                <option value="1">Kota 1</option>
-                                <option value="2">Kota 2</option>
-                                <option value="3">Kota 3</option>
+                                <option value="1">Semarang</option>
+                                <option value="2">Surakarta (Solo)</option>
+                                <option value="3">Salatiga</option>
+                                <option value="4">Tegal</option>
+                                <option value="5">Magelang</option>
+                                <option value="6">Kudus</option>
+                                <option value="7">Pekalongan</option>
+                                <option value="8">Klaten</option>
+                                <option value="9">Boyolali</option>
+                                <option value="10">Sukoharjo</option>
                             </select>
                         </div>
                         <div class="col mb-3">
                             <label for="location" class="form-label fw-semibold text-web2">Kecamatan</label>
                             <select class="form-select border-0" id="subdistrict">
                                 <option selected>Pilih Kecamatan</option>
-                                <option value="1">Kecamatan 1</option>
-                                <option value="2">Kecamatan 2</option>
-                                <option value="3">Kecamatan 3</option>
+                                <option value="1">Semarang Selatan</option>
+                                <option value="2">Semarang Barat</option>
+                                <option value="3">Semarang Timur</option>
+                                <option value="4">Semarang Utara</option>
+                                <option value="5">Candisari</option>
+                                <option value="6">Gayamsari</option>
+                                <option value="7">Genuk</option>
+                                <option value="8">Tembalang</option>
+                                <option value="9">Mijen</option>
+                                <option value="10">Pedurungan</option>
                             </select>
                         </div>
                         <div class="col mb-3">
                             <label for="location" class="form-label fw-semibold text-web2">Kelurahan</label>
                             <select class="form-select border-0" id="ward">
                                 <option selected>Pilih Kelurahan</option>
-                                <option value="1">Kelurahan 1</option>
-                                <option value="2">Kelurahan 2</option>
-                                <option value="3">Kelurahan 3</option>
+                                <option value="1">Banjarsari</option>
+                                <option value="2">Kampung Kali</option>
+                                <option value="3">Mangkang Wetan</option>
+                                <option value="4">Pekunden</option>
+                                <option value="5">Semarang Baru</option>
+                                <option value="6">Ngemplak</option>
+                                <option value="7">Sidodadi</option>
+                                <option value="8">Tandang</option>
+                                <option value="9">Banyumanik</option>
+                                <option value="10">Tembalang</option>
                             </select>
-                        </div>
+                        </div>                        
                     </div>
-
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck1">
-                            Lorem Ipsum has been the industry's standard
+                        <input class="form-check-input custom-checkbox" type="checkbox" value=""
+                            id="checkbox5">
+                        <label class="form-check-label" for="checkbox">
+                            Saya menyetujui kebijakan yang berlaku dari Beauty Shop
                         </label>
                     </div>
                 </div>
@@ -162,7 +185,7 @@
                             </div>
                             <div>
                                 <h4 class="fw-semibold mb-1">Niacinamide Brightening Moisturizer Gel</h4>
-                                <p class="text-web3 mb-0">1 x 39 G</p>
+                                <p class="text-web3 mb-0">1 x 30 G</p>
                             </div>
                         </div>
                         <div class="d-flex align-items-center">

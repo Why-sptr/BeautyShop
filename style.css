@@ -249,6 +249,17 @@ h6 {
     font-weight: bold;
 }
 
+/* Radio */
+input[type="radio"]:checked {
+    background-color: #3a2d36;
+    border-color: #3a2d36;
+}
+
+input[type="radio"]:checked+label .form-check-input {
+    background-color: #3a2d36;
+    border-color: #3a2d36
+}
+
 .custom-range {
     width: 100%;
     appearance: none;

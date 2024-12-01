@@ -11,7 +11,7 @@ if (rangeSlider && sliderLabel) {
         const min = rangeSlider.min;
         const max = rangeSlider.max;
 
-        sliderLabel.textContent = sliderValue;
+        sliderLabel.textContent = formatNumber(sliderValue);
 
         const percentage = (sliderValue - min) / (max - min);
         const labelPosition =
@@ -19,6 +19,10 @@ if (rangeSlider && sliderLabel) {
 
         sliderLabel.style.left = `${labelPosition}px`;
     });
+}
+
+function formatNumber(value) {
+    return Number(value).toLocaleString();
 }
 
 // Scrollable Container Drag
@@ -64,9 +68,9 @@ function updateCartBadge() {
     if (cartBadge) {
         if (cartItemCount > 0) {
             cartBadge.textContent = cartItemCount;
-            cartBadge.style.display = 'inline-block'; // Menampilkan badge
+            cartBadge.style.display = 'inline-block';
         } else {
-            cartBadge.style.display = 'none'; // Menyembunyikan badge jika tidak ada item
+            cartBadge.style.display = 'none';
         }
     }
 }
@@ -201,9 +205,9 @@ function renderProductList() {
         </div>
         <div id="desktop-quantity" class="col-md-3 text-center d-flex align-items-center justify-content-center desktop">
     <div class="input-group justify-content-center">
-        <button class="btn-web1 btn-minus" type="button" data-item="${product.id}">-</button>
-        <input type="text" class="form-control-item" placeholder="Quantity" aria-label="Quantity" value="1" id="quantity-input-${product.id}">
-        <button class="btn-web1 btn-plus" type="button" data-item="${product.id}">+</button>
+        <button class="btn-web1 btn-minus-desktop" type="button" data-item-desktop="${product.id}">-</button>
+        <input type="text" class="form-control-item" placeholder="Quantity" aria-label="Quantity" value="1" id="quantity-input-desktop-${product.id}">
+        <button class="btn-web1 btn-plus-desktop" type="button" data-item-desktop="${product.id}">+</button>
     </div>
     </div>
         <div class="col-md-2 text-center desktop">
@@ -278,11 +282,39 @@ plusButtons.forEach((button) => {
     button.addEventListener("click", handleQuantityChange);
 });
 
+// Increase Decrease
+function handleQuantityChangeDesktop(event) {
+    const button = event.target;
+    const itemId = button.getAttribute("data-item-desktop");
+    const quantityInput = document.getElementById(`quantity-input-desktop-${itemId}`);
+    let currentValue = parseInt(quantityInput.value);
+
+    if (button.classList.contains("btn-minus-desktop")) {
+        if (currentValue > 1) {
+            quantityInput.value = currentValue - 1;
+        }
+    }
+
+    if (button.classList.contains("btn-plus-desktop")) {
+        quantityInput.value = currentValue + 1;
+    }
+}
+const minusButtonsDesktop = document.querySelectorAll(".btn-minus-desktop");
+const plusButtonsDesktop = document.querySelectorAll(".btn-plus-desktop");
+
+minusButtonsDesktop.forEach((button) => {
+    button.addEventListener("click", handleQuantityChangeDesktop);
+});
+
+plusButtonsDesktop.forEach((button) => {
+    button.addEventListener("click", handleQuantityChangeDesktop);
+});
+
 // Submit Allert
-const submitButton = document.getElementById("submitButton");
+const submitButtonMessage = document.getElementById("submitButtonMessage");
 const successAlert = document.getElementById("successAlert");
 
-submitButton.addEventListener("click", (event) => {
+submitButtonMessage.addEventListener("click", (event) => {
     event.preventDefault();
 
     successAlert.classList.remove("d-none");
